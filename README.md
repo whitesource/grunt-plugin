@@ -10,13 +10,13 @@ This plugin requires Grunt.
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install whitesrc --save-dev
+npm install grunt-whitesource --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('whitesrc');
+grunt.loadNpmTasks('grunt-whitesource');
 ```
 
 ## The "whitesource" task
@@ -26,7 +26,7 @@ In your project's Gruntfile, add a section named `whitesource` to the data objec
 
 ```js
 grunt.initConfig({
-  whitesrc: {
+  whitesource: {
     options: {
           'apiKey':'',
           'https':'',
@@ -53,7 +53,7 @@ grunt.initConfig({
 
 ```js
 grunt.initConfig({
-  whitesrc: {
+  whitesource: {
     options: {
       'apiKey':'AAA-BBB-CCC-DDD',
     }
