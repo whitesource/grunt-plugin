@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('whitesource', 'whitesource grunt plugin', function () {
-    if (shell.exec('node node_modules/whitesource/bin/whitesource.js run').code !== 0) {
+    if (shell.exec('node ./node_modules/grunt-whitesource/node_modules/whitesource/bin/whitesource.js run').code !== 0) {
       shell.echo('Error: Whitesource failed to run');
       shell.exit(1);
     }

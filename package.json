@@ -1,6 +1,6 @@
 {
   "name": "grunt-whitesource",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "description": "whitesource grunt plugin",
   "repository": "https://github.com/whitesource/grunt-plugin.git",
   "author": {
