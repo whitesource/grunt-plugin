@@ -1,5 +1,5 @@
 {
-  "name": "whitesrc",
+  "name": "grunt-whitesource",
   "version": "0.0.1",
   "description": "whitesource grunt plugin",
   "repository": "https://github.com/whitesource/grunt-plugin.git",
