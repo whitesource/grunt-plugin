@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     },
 
     // Configuration to be run (and then tested).
-    whitesource: {
+    whitesrc: {
       default_options: {
         options: {
           'apiKey':'',
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'whitesource', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'whitesrc', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

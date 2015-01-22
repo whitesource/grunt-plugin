@@ -1,5 +1,5 @@
 /*
- * whitesource
+ * whitesrc
  * 
  *
  * Copyright (c) 2015 Doron Gour
@@ -14,7 +14,7 @@ module.exports = function (grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  grunt.registerMultiTask('whitesource', 'whitesource grunt plugin', function () {
+  grunt.registerMultiTask('whitesrc', 'whitesrc grunt plugin', function () {
     if (shell.exec('whitesource run').code !== 0) {
       shell.echo('Error: Whitesource failed to run');
       shell.exit(1);
