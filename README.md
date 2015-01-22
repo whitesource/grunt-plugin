@@ -2,6 +2,8 @@
 
 > whitesource grunt plugin
 
+More about the White Source service: [http://www.whitesourcesoftware.com/](http://www.whitesourcesoftware.com/)
+
 ## Getting Started
 This plugin requires Grunt.
 
@@ -48,7 +50,6 @@ grunt.initConfig({
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
 
 ```js
 grunt.initConfig({
