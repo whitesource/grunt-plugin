@@ -35,19 +35,20 @@ module.exports = function (grunt) {
     whitesource: {
       default_options: {
         options: {
+          'apiKey':'',
+          'https':'',
+          'baseURL':'',
+          'port' :'',
+          'productName':'',
+          'productVersion':'',
+          'productToken':'',
+          'projectName':'',
+          'projectVer':'',
+          'projectToken':''
         },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+        /*files: {
+          //'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+        }*/
       }
     },
 

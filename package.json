@@ -15,7 +15,14 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "license": "MIT",
+  "license":{
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  },
+  "dependencies":{
+      "shelljs": "^0.3.0",
+      "whitesource":"*"
+  },
   "devDependencies": {
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-jshint": "~0.8.0",

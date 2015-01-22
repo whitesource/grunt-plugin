@@ -7,6 +7,7 @@
  */
 
 'use strict';
+var shell = require('shelljs');
 
 module.exports = function (grunt) {
 
@@ -14,8 +15,11 @@ module.exports = function (grunt) {
   // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('whitesource', 'whitesource grunt plugin', function () {
-
-    // Merge task-specific and/or target-specific options with these defaults.
+    if (shell.exec('whitesource run').code !== 0) {
+      shell.echo('Error: Whitesource failed to run');
+      shell.exit(1);
+    }
+/*    // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       punctuation: '.',
       separator: ', '
@@ -45,7 +49,10 @@ module.exports = function (grunt) {
 
       // Print a success message.
       grunt.log.writeln('File "' + file.dest + '" created.');
-    });
+    });*/
+
+  
+
   });
 
 };
